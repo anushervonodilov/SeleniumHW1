@@ -1,18 +1,18 @@
+package class05;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HomeWork {
+public class CheckBoxes {
     public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.amazon.com/");
+        driver.manage().window().maximize();
+        driver.get("http://practice.syntaxtechs.net/basic-checkbox-demo.php");
 
-        System.out.println(driver.getTitle());
-        System.out.println(driver.getCurrentUrl());
 
-        driver.close();
 
     }
 }
